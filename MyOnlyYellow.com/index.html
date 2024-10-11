@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Yellow</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: Yellow;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            width: 80%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .response {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #555;
+        }
+        .error {
+            color: red;  
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Code babeee</h1>
+        <p>Hiii babyyy! Enter a code and I'll respond :></p>
+        <input type="text" id="codeInput" placeholder="Make sure it's right darling haha!" onkeydown="checkEnterKey(event)">
+        <br>
+        <button onclick="getResponse()">Submit</button>
+        <div class="response" id="responseMessage"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
